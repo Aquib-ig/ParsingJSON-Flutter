@@ -31,7 +31,8 @@ class Photo{
     return new Photo(
       id: json['id'].toString(),
       title: json['title'],
-      url: json['json'],
+      // fixed this to url it was json in ['json']
+      url: json['url'],
     );
   }
 
